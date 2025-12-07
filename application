@@ -1,0 +1,13 @@
+<?php
+/**
+ * Front controller for FinalProject.
+ * Delegates routing to Dispatcher.
+ */
+
+require_once __DIR__ . "/application/config.php";
+require_once __DIR__ . "/vendor/autoload.php";
+require_once __DIR__ . "/application/dispatcher.class.php";
+
+// Create dispatcher and route the request
+$dispatcher = new Dispatcher();
+$dispatcher->dispatch();
